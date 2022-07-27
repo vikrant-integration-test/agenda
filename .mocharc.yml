@@ -7,4 +7,4 @@ reporter: 'spec'
 timeout: '8000' # same as "timeout: '2s'"
 trace-warnings: true # node flags ok
 ui: 'bdd'
-exit: '-b'
+exit: true
