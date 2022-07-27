@@ -1,9 +1,6 @@
 postMerge :
-
   
   subModules:          #Not to be changed
-      
-
         
       - name: agenda     
         path : "./"
@@ -26,17 +23,11 @@ postMerge :
             command:
               - node --version 
 
-
-      
-
- 
         
       
 preMerge : 
   
   subModules:          #Not to be changed
-     
-
 
     - name: agenda     
       path : "./"
