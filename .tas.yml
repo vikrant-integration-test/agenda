@@ -22,6 +22,7 @@ postMerge :
         postRun:
             command:
               - node --version 
+        configFile : ".mocharc.yml"
 
         
       
@@ -48,6 +49,7 @@ preMerge :
       postRun:
           command:
             - node --version 
+      configFile : ".mocharc.yml"
       
 
 version : 2.0.1
