@@ -6,8 +6,6 @@ postMerge :
         path : "./"
         pattern: 
           - "./test/*.js"
-        blocklist:
-          - "./test/job.js"
         framework : mocha
         preRun:
           env:
