@@ -11,6 +11,7 @@ preRun:
     - apt-get update && apt-get install -y mongodb-org
     - mongod &
     - yarn install
+    - yarn run build
 
 postMerge:
   # THIRDLY - You need to set postMerge patterns.
