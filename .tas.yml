@@ -23,8 +23,7 @@ postMerge :
             command:
               - node --version 
         configFile : ".mocharc.yml"
-
-        
+       
       
 preMerge : 
   
