@@ -3,7 +3,7 @@ postMerge :
     command:
       - mkdir -p /data/db
       - mkdir -p /data/log
-      - chmod -R 666 /data/
+
       - yarn install
       - yarn run build
   
@@ -20,8 +20,10 @@ postMerge :
           command:
             - curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc |  apt-key add -
             - echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.4 multiverse" |  tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+            - chmod -R 666 /data/
             - apt-get update && apt-get install -y mongodb-org
-            - mongod --wiredTigerCacheSizeGB 0.5 --logpath /data/log/mongodb.log --syslog /data/log/mongodbsys.log  --fork  &
+            
+            - mongod --wiredTigerCacheSizeGB 0.5 --logpath /data/log/mongodb.log --fork  &
 
             
         runPreRunEveryTime: true
