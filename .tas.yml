@@ -71,5 +71,4 @@ preMerge :
               - node --version 
         configFile : ".mocharc.yml"
       
-
 version : 2.0.1
